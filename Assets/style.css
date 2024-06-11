@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital@1&display=swap");
+
+/* Define global variables */
+:root {
+    --primary-color: #669ccb;
+    --primary-color-dark: #5681a7;
+    --secondary-color: #e8f1fa;
+    --text-dark: #282d31;
+    --text-light: #1034ff;
+    --extra-light: #f8f3f3;
+    --max-width: 1200px;
+}
+
+/* Resetting default styles and applying box-sizing */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Setting up the base font for the entire document */
+body {
+    font-family: 'Lilita One', sans-serif;
+    height: 100%;
+}
+
+/* Styling for the main container */
+.section_container {
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+/* Styling for section titles */
+.section_title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Styling for section subtitles */
+.section_subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* Styling for images to ensure they're responsive */
+img {
+    width: 100%;
+}
+
+/* Styling for the navigation bar */
+nav {
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Example background color */
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+    display: flex; /* Make all items in the navbar behave as flex items */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically */
+}
+
+.nav_logo {
+    margin-right: auto; /* Push logo to the left */
+}
+
+/* Styling for the navigation logo */
+.nav_logo a {
+    text-decoration: none;
+    color: white; /* Change color to white */
+    font-size: 2.8rem; /* Increase font size */
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 2;
+}
+
+.link {
+    color: var(--extra-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 20px; /* Adjust the spacing between links */
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--extra-light);
+}
+
+.link a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+/* Styling for the header section */
+header {
+    min-height: 100vh;
+    padding-bottom: 50px;
+    left: 5rem;
+    background: linear-gradient(rgba(243, 246, 249, 0.5), rgba(0, 0, 0, 0.5)), url("/images/output_image.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styling for the header content container */
+header .section_container {
+    height: 185%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: right;
+}
+
+/* Styling for the header content */
+.header_content {
+    height: 430px;
+    font-size: 1.6rem;
+    color: #222325;
+    margin-top: 4rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-style: normal;
+    padding: 0 20px;
+}
+
+/* Styling for the header title */
+.header_content h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-top: 10%;
+}
+
+/* Styling for the header paragraph */
+.header_content p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+/* Styling for the header button */
+.header_content button {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #003961;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Styling for the header button hover effect */
+.header_content button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.journey_container {
+    background-color: var(--secondary-color);
+}
+
+.journey_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.country_card {
+    background-color: #003961;
+}
+
+.country_name {
+    padding: 1rem;
+    text-align: center;
+    gap: .5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.country_name i {
+    font-size: 1.2rem;
+}
+
+.country_name span {
+    font-style: italic;
+}
+
+.banner_container {
+    background-image: linear-gradient(), url("/images/wp11896351.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_container .section_container {
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: #050000;
+}
+
+.banner_content h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.banner_content button {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #003961;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mu-about {
+    background-color: #d0d4d780;
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#install-ios-btn {
+    padding: 1.5rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #003961;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#install-ios-btn button :hover {
+    color: var(--primary-color);
+}
+
+#install-android-btn {
+    padding: 1.5rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #003961;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mu-about-right .installing {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.mu-about button :hover {
+    background-color: var(--primary-color-dark);
+    align-items: center;
+}
+
+.mu-about-area {
+    display: inline;
+    float: left;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.mu-title-area {
+    display: inline;
+    float: right;
+    text-align: center;
+    padding: 60px;
+    width: 50%;
+}
+
+.mu-title {
+    color: #ffffff;
+    margin-bottom: 15px;
+    padding: 0;
+    z-index: 10;
+    text-transform: capitalize;
+}
+
+.mu-about-left {
+    width: 140%;
+    size: 12px;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+
+.mu-about-right {
+    display: inline;
+    float: right;
+    margin-top: 200px;
+    width: 100%;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #e8f1fa;
+    color: #000000;
+    font-family: 'Lilita One', sans-serif;
+}
+
+footer .section_container {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.social_icons i {
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.section_container button {
+    background: transparent;
+    border: none;
+    transition: .4s;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.section_container button:hover {
+    background-color: var(--primary-color-dark);
+    color: white !important;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    /* Displaying navigation links on larger screens */
+    .nav_links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Adjusting the position of the header content for larger screens */
+    header .section_container {
+        justify-self: flex-start;
+    }
+
+    /* Limiting the width of the header content on larger screens */
+    .header_content {
+        max-width: 500px;
+        align-items: flex-start;
+    }
+
+    /* Aligning paragraphs to the left in the header content on larger screens */
+    .header_content p {
+        text-align: center;
+    }
+
+    .journey_grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    @media (min-width: 786px) {
+        .banner_container .section_container {
+            justify-content: flex-end;
+        }
+    }
+    /* Center the welcome text in the header */
+    .blog-welcome-text {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+        /* Styling for the blog container */
+    .blog_container {
+        padding: 5rem 1rem;
+        background-color: var(--extra-light);
+    }
+
+    /* Styling for individual blog posts */
+    .blog_post {
+        margin-bottom: 3rem;
+        padding: 2rem;
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for blog post titles */
+    .blog_post h3 {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    /* Styling for blog post paragraphs */
+    .blog_post p {
+        font-size: 1rem;
+        color: var(--text-dark);
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+}
